@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
+*{
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    background: hsl(217, 28%, 15%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    padding: 30px 0;
+}
+nav div{
+    display: flex;
+    gap: 40px;
+}
+
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: url('./images/bg-curvy-desktop.svg'), no-repeat;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 0 0 100px 0;
+}
+.presentation h2{
+    font-size: 30px;
+    width: 50%;
+    margin-left: 25%;
+}
+.presentation img{
+    width: 50%;
+    margin-left: 25%;
+}
+.presentation p{
+    width: 50%;
+    margin-left: 25%;
+}
+.presentation button{
+    width: 20%;
+    margin-left: 40%;
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 30px;
+    color: white;
+}
+button:hover{
+    transition: 1s;
+    background: transparent;
+    border: 1px solid white;
+}
+
+
+.down{
+    background: hsl(218, 28%, 13%);
+}
+.caracteristicas{
+    width: 60%;
+    margin-left: 20%;
+    gap: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: hsl(218, 28%, 13%);
+}
+.caracteristicas div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    text-align: center;
+}
+.caracteristicas p{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+
+
+.productive{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 10%;
+}
+.productive h2{
+    color: white;
+    width: 60%;
+    font-size: 30px;
+}
+.productive-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.comments{
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    width: 90%;
+    padding: 10% 0 5% 0;
+    margin-left: 5%;
+    background: url('./images/bg-quotes.png') no-repeat;
+    background-position: left 29%;
+}
+.comment{
+    background: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    line-height: 18px;
+    box-shadow: 3px 3px 15px 0.2px  hsl(214, 44%, 13%);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.comment span{
+    color: rgba(255, 255, 255, 0.4);
+}
+.comment-down{
+    display: flex;
+    gap: 10px;
+}
+.comment-down img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+.early{
+    width: 60%;
+    margin-left: 17%;
+    background: hsl(217, 28%, 15%);
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.4);
+}
+.early-input{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.early-input input{
+    width: 65%;
+    padding: 15px 5px;
+    border-radius: 30px;
+    border: none;
+}
+.early h2{
+    color: white;
+}
+.early p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.early button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.early button:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+footer{
+    width: 90%;
+    margin-left: 5%;
+    padding: 10% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-location{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-sections{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.footer-contact{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.footer-contact div{
+    display: flex;
+    gap: 15px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+a:hover, .icons img:hover{
+    transform: scale(1.3);
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.icons img{
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+input:active{
+    border: none;
+}
+.how-work{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.how-work:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 900px){
+
+    .presentation{
+        background: url('./images/bg-curvy-mobile.svg') no-repeat;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .productive{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .productive h2{
+        width: 100%;
+    }
+    .productive-text{
+        align-items: center;
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .comment-down div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .early-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .early-input input{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+    .presentation button{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .early-input button{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+    .footer-sections{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-location{
+        width: 90%;
+    }
+    footer{
+        padding: 25% 0;
+    }
+    .icons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 470px){
+    nav{
+        width: 100%;
+        margin-left: 0;
+    }
+    nav div{
+        gap: 10px;
+    }
+    nav img{
+        width: 30%;
+    }
+}
